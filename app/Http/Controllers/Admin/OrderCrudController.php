@@ -95,7 +95,7 @@ class OrderCrudController extends CrudController
     }
     protected  function showDetailsRow($id){
         $total = 0;
-        $order = Order::find($id)->first();
+        $order = Order::where("id","=",$id)->first();
         $items=$order->items()->get();
         return view('vendor.order',['order'=>$order,'carts'=>$items,'total'=>$order->total]) ;
     }
