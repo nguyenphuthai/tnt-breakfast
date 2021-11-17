@@ -84,12 +84,12 @@
                                     <i class="fas text-white fa-cart-plus"></i>
                                 </a>
                                 <form class="form-inline">
-                                    <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit">
-                                        <i class="fa fa-search" aria-hidden="true"></i>
-                                    </button>
+                                    <a class="btn  my-2 my-sm-0 nav_search-btn" href="{{route("backpack.auth.logout")}}">
+                                        <i class="fa fa-sign-out" aria-hidden="true"></i>
+                                    </a>
                                 </form>
                                 <a href="" class="order_online">
-                                    Đặt online
+                                    Phản hồi
                                 </a>
                             </div>
                         </div>
