@@ -12,44 +12,10 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="form_container">
-                        <form action="">
-                            <div>
-                                <input type="text" class="form-control" placeholder="Họ và tên"/>
-                            </div>
-                            <div>
-                                <input type="text" class="form-control" placeholder="Số điện thoại"/>
-                            </div>
-                            <div>
-                                <input type="email" class="form-control" placeholder="Email"/>
-                            </div>
-                            <div>
-                                <select class="form-control nice-select wide">
-                                    <option value="" disabled selected>
-                                        Bạn có mấy người ?
-                                    </option>
-                                    <option value="">
-                                        2
-                                    </option>
-                                    <option value="">
-                                        3
-                                    </option>
-                                    <option value="">
-                                        4
-                                    </option>
-                                    <option value="">
-                                        5
-                                    </option>
-                                </select>
-                            </div>
-                            <div>
-                                <input type="date" class="form-control">
-                            </div>
-                            <div class="btn_box">
-                                <button>
-                                    Đặt ngay
-                                </button>
-                            </div>
-                        </form>
+                        <iframe
+                            src="https://docs.google.com/forms/d/e/1FAIpQLSeO3zqVzbFa0y1rEXlhiR8JdghmwNNVcQCMRRl1wLoStwwz_w/viewform?embedded=true"
+                            width="100%" height="370" frameborder="0" marginheight="0" marginwidth="0">Đang tải…
+                        </iframe>
                     </div>
                 </div>
                 <div class="col-md-6">
