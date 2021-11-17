@@ -73,7 +73,7 @@
                                     <a class="nav-link" href="{{route("about")}}">Thông tin</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="{{route("book")}}">Đặt món</a>
+                                    <a class="nav-link" href="{{route("book")}}">Phản hồi</a>
                                 </li>
                             </ul>
                             <div class="user_option">
@@ -88,8 +88,8 @@
                                         <i class="fa fa-sign-out" aria-hidden="true"></i>
                                     </a>
                                 </form>
-                                <a href="" class="order_online">
-                                    Phản hồi
+                                <a href="{{route("menu")}}" class="order_online">
+                                    Đặt món
                                 </a>
                             </div>
                         </div>
