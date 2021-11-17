@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Requests\OrderRequest;
+use App\Models\Order;
 use Backpack\CRUD\app\Http\Controllers\CrudController;
 use Backpack\CRUD\app\Library\CrudPanel\CrudPanelFacade as CRUD;
 
@@ -30,6 +31,7 @@ class OrderCrudController extends CrudController
         CRUD::setRoute(config('backpack.base.route_prefix') . '/order');
         CRUD::setEntityNameStrings('Đơn hàng', 'Các đơn hàng');
         $this->crud->denyAccess("create");
+        $this->crud->enableDetailsRow();
     }
 
     /**
@@ -53,6 +55,7 @@ class OrderCrudController extends CrudController
         CRUD::addColumn(['name' => 'payment_method', 'label' => 'Phương thức']);
         CRUD::addColumn(['name' => 'total', 'label' => 'Tổng số tiền']);
         CRUD::addColumn(['name' => 'status', 'label' => 'Trạng thái','type'=>"select_from_array","options"=>["Chờ","Nhận đơn","Đang giao","Xong"]]);
+
         /**
          * Columns can be defined using the fluent syntax or array syntax:
          * - CRUD::column('price')->type('number');
@@ -69,7 +72,7 @@ class OrderCrudController extends CrudController
     protected function setupCreateOperation()
     {
         CRUD::setValidation(OrderRequest::class);
-
+        $this->crud->addField(['name'=>'status','type'=>'select_from_array','options'=>['Đang chờ','Đã xác nhận','Đang vận chuyển','Đã chuyển']]);
 
 
 
@@ -90,4 +93,11 @@ class OrderCrudController extends CrudController
     {
         $this->setupCreateOperation();
     }
+    protected  function showDetailsRow($id){
+        $total = 0;
+        $order = Order::find($id)->first();
+        $items=$order->items()->get();
+        return view('vendor.order',['order'=>$order,'carts'=>$items,'total'=>$order->total]) ;
+    }
+
 }

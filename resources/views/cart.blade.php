@@ -128,7 +128,7 @@
                     success: function (data, status, xhr) {   // success callback function
                         console.log(data);
                         $("#totalCost").text(data.cost);
-                        $("#formCost").text(data.cost);
+                        $("#formCost").val(data.cost);
                     },
                     error: function (jqXhr, textStatus, errorMessage) { // error callback
                         console.log(errorMessage)
