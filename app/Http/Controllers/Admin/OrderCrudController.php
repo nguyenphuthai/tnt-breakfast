@@ -54,7 +54,7 @@ class OrderCrudController extends CrudController
         CRUD::addColumn(['name' => 'ship_address', 'label' => 'Địa chỉ']);
         CRUD::addColumn(['name' => 'payment_method', 'label' => 'Phương thức']);
         CRUD::addColumn(['name' => 'total', 'label' => 'Tổng số tiền']);
-        CRUD::addColumn(['name' => 'status', 'label' => 'Trạng thái','type'=>"select_from_array","options"=>["Chờ","Nhận đơn","Đang giao","Xong"]]);
+        CRUD::addColumn(['name' => 'status', 'label' => 'Trạng thái','type'=>"select_from_array","options"=>["Chờ","Đang giao","Xong","Huỷ"]]);
 
         /**
          * Columns can be defined using the fluent syntax or array syntax:
@@ -72,7 +72,7 @@ class OrderCrudController extends CrudController
     protected function setupCreateOperation()
     {
         CRUD::setValidation(OrderRequest::class);
-        $this->crud->addField(['name'=>'status','type'=>'select_from_array','options'=>['Đang chờ','Đã xác nhận','Đang vận chuyển','Đã chuyển']]);
+        $this->crud->addField(['name'=>'status','type'=>'select_from_array','options'=>['Đang chờ','Đang vận chuyển','Đã chuyển',"Đã huỷ"]]);
 
 
 

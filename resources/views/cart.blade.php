@@ -70,6 +70,9 @@
                 <div class="col-sm-6 mb-3 mb-m-1 order-md-1 text-md-left">
                     <a href="{{route("menu")}}">
                         <i class="fas fa-arrow-left mr-2"></i> Tiếp tục mua sắm</a>
+                    <div></div>
+                    <a href="{{route("order.history")}}">
+                        Xem lịch sử mua hàng <i class="fas fa-arrow-right mr-2"></i></a>
                 </div>
             </div>
         </div>

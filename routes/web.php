@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\CartController;
 use App\Http\Controllers\IndexController;
+use App\Http\Controllers\OrderHistoryController;
 use App\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Route;
 
@@ -32,3 +33,5 @@ Route::get("/addCart/{id}", [CartController::class, "pushToCart", "id"])->where(
 Route::get("/changeQuantity/{id}/q/{quantity}", [CartController::class, "changeQuantity", "id", "quantity"])->where(["id","quantity"])->name("changeQuantity");
 Route::get("/destroyItem/{id}",[CartController::class,"destroyItem","id"])->where(["id"])->name("destroyItem");
 Route::post("/order",[CartController::class,"addOrder"])->name("orderBill");
+Route::get("/history",[OrderHistoryController::class,"index"])->name("order.history");
+
