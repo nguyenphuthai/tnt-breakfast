@@ -14,10 +14,10 @@
                                         TNT Breakfast
                                     </h1>
                                     <p>
-                                        TNT food ăn không ngon thì cút,nhanh gọn,chất lượng,uy tín,đảm bảo an toàn 96.69%
+                                        Easy to use
                                     </p>
                                     <div class="btn-box">
-                                        <a href="" class="btn1">
+                                        <a href="{{route("menu")}}" class="btn1">
                                             Đặt ngay
                                         </a>
                                     </div>
@@ -35,10 +35,10 @@
                                         TNT Breakfast
                                     </h1>
                                     <p>
-                                        TNT food ăn không ngon thì cút,nhanh gọn,chất lượng,uy tín,đảm bảo an toàn 96.69%
+                                        Fast delivery
                                     </p>
                                     <div class="btn-box">
-                                        <a href="" class="btn1">
+                                        <a href="{{route("menu")}}" class="btn1">
                                             Đặt ngay
                                         </a>
                                     </div>
@@ -56,10 +56,10 @@
                                         TNT Breakfast
                                     </h1>
                                     <p>
-                                        TNT food ăn không ngon thì cút,nhanh gọn,chất lượng,uy tín,đảm bảo an toàn 96.69%
+                                        Time-saving
                                     </p>
                                     <div class="btn-box">
-                                        <a href="" class="btn1">
+                                        <a href="{{route("menu")}}" class="btn1">
                                             Đặt ngay
                                         </a>
                                     </div>
@@ -100,7 +100,7 @@
                                 <h6>
                                     <span>20%</span> Off
                                 </h6>
-                                <a href="">
+                                <a href="{{route("menu")}}">
                                     Đặt ngay
                                     <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                                          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -173,7 +173,7 @@
                                 <h6>
                                     <span>15%</span> Off
                                 </h6>
-                                <a href="">
+                                <a href="{{route("menu")}}">
                                     Đặt ngay
                                     <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                                          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -246,7 +246,7 @@
     <section class="food_section layout_padding">
         <div class="container">
             <div class="heading_container heading_center">
-                <h2 style="color: white">
+                <h2 >
                     Thực đơn
                 </h2>
             </div>

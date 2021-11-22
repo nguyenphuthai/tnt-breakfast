@@ -7,7 +7,7 @@
     <section class="food_section layout_padding">
         <div class="container">
             <div class="heading_container heading_center">
-                <h2 style="color: white">
+                <h2 >
                     Thực đơn
                 </h2>
             </div>

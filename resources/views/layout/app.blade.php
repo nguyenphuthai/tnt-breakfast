@@ -11,7 +11,7 @@
     <meta name="keywords" content=""/>
     <meta name="description" content=""/>
     <meta name="author" content=""/>
-    <link rel="shortcut icon" href="{{asset("images/favicon.png")}}" type="">
+    <link rel="shortcut icon" href="{{asset("images/logo.png")}}" type="">
 
     <title> TNT Breakfast </title>
 
@@ -50,9 +50,10 @@
                 <div class="container">
                     <nav class="navbar navbar-expand-lg custom_nav-container ">
                         <a class="navbar-brand" href="{{route("index")}}">
-            <span>
-              tnt-breakfast
-            </span>
+{{--            <span>--}}
+{{--              tnt-breakfast--}}
+{{--            </span>--}}
+                            <img style="height: 80px" src="{{asset("images/logo.png")}}">
                         </a>
 
                         <button class="navbar-toggler" type="button" data-toggle="collapse"
@@ -113,7 +114,7 @@
                                 <a href="">
                                     <i class="fa fa-map-marker" aria-hidden="true"></i>
                                     <span>
-                  Vị trí
+                  Vị trí : Gia Lập - Gia Viễn - Ninh Bình
                 </span>
                                 </a>
                                 <a href="">
@@ -166,16 +167,14 @@
                             Mọi ngày
                         </p>
                         <p>
-                            24/24
+                            5:00 - 20:00
                         </p>
                     </div>
                 </div>
                 <div class="footer-info">
                     <p>
                         &copy; <span id="displayYear"></span> All Rights Reserved By
-                        <a href="https://html.design/">Free Html Templates</a><br><br>
-                        &copy; <span id="displayYear"></span> Distributed By
-                        <a href="https://themewagon.com/" target="_blank">ThemeWagon</a>
+                        <a href="https://html.design/">TNT Studio</a><br><br>
                     </p>
                 </div>
             </div>
